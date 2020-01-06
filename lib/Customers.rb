@@ -2,12 +2,13 @@
 #Feel free to change the name of the class
 class Nightclubcustomers
     attr_reader :name, :budget
-    attr_accessor :tip_percentage, :tab
+    attr_accessor :tab
 
     @@all = []
-    def initialize(name, budget)
+    def initialize(name, budget, tab)
         @name = name
         @budget = budget
+        @tab = tab
 
         @@all << self
     end
