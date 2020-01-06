@@ -1,15 +1,16 @@
-class Tipsgiven
-    attr_accessor :tip_percentage, :bartender, :consumer
+class Gratuity
+    attr_accessor :tip_percentage, :bartender, :customer
 
     @@all = []
 
-    def initialize(tip_percentage, consumers, bartender)
+    def initialize(tip_percentage, customer, bartender)
         @tip_percentage = tip_percentage
-        @consumers = consumers
+        @customer = customer
         @bartender = bartender
 
         @@all << self 
     end
+
 
     def self.all
         @@all
